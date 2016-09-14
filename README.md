@@ -13,7 +13,7 @@ values based on your Chef Compliance Server setup
 
 To get this project into your Workflow environment, please do the following:
 
-1. git clone https://github.com/ricardolupo/demo_inspec
+1. `git clone https://github.com/ricardolupo/demo_inspec`
 2. `rm -rf .git` on LINUX/MAC; `rm -Force .git` on Windows
 3. `git init .`
 4. `delivery init --skip-build-cookbook`
