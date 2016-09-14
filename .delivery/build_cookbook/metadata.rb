@@ -1,4 +1,4 @@
-name 'workflow_inspec'
+name 'build_cookbook'
 maintainer 'Ricardo Lupo'
 maintainer_email 'ricardo@chef.io'
 license 'Apache'
