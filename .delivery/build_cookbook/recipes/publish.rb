@@ -15,5 +15,5 @@ execute 'Logging into Compliance Server' do
 end
 
 execute 'Uploading Profile to Compliance Server' do
-  command 'inspec compliance upload <put the attribute for the repo path here> '
+  command "inspec compliance upload #{workflow_workspace_repo}"
 end
