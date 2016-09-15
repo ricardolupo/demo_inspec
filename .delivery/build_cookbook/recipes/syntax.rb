@@ -4,4 +4,6 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-# run inspec check
+execute 'running syntax checks on InSpec profile...' do
+  command "inspec check #{workflow_workspace_repo}"
+end
