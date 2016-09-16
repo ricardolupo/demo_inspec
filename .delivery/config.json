@@ -4,7 +4,7 @@
     "name": "build_cookbook",
     "path": ".delivery/build_cookbook"
   },
-  "skip_phases": ["unit", "provision", "deploy", "smoke", "functional", "quality", "securityß"],
+  "skip_phases": ["unit", "provision", "deploy", "smoke", "functional", "quality", "security"],
   "build_nodes": {},
   "dependencies": []
 }
