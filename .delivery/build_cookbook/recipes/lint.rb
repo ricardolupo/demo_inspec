@@ -10,3 +10,10 @@ execute 'Running Lint checks on Ruby files in this profile...' do
   command "rubocop #{workflow_workspace_repo}/controls/"
 end
 # yaml check - use ruby command line
+
+ruby_block 'Running YAML lint checks' do
+  block do
+    require 'yaml'
+    puts YAML.load_file("#{workflow_workspace_repo}/inspec.yml")
+  end
+end

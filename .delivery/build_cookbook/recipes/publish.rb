@@ -10,6 +10,16 @@ compliance_server = node['workflow_inspec']['compliance-server']
 token = node['workflow_inspec']['compliance-token']
 user = node['workflow_inspec']['compliance-user']
 
+execute 'inspec version'
+
+chef_gem 'inspec' do
+  action :upgrade
+end
+
+execute 'Clearing tokens...' do
+  command 'inspec compliance logout'
+end
+
 execute 'Logging into Compliance Server' do
   command "inspec compliance login #{compliance_server} --user=#{user} --insecure --token=#{token}"
 end
